@@ -35,6 +35,7 @@ class AnimationClip {
 		const tracks = [],
 			jsonTracks = json.tracks,
 			frameTime = 1.0 / ( json.fps || 1.0 );
+		
 
 		for ( let i = 0, n = jsonTracks.length; i !== n; ++ i ) {
 
