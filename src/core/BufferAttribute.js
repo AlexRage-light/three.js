@@ -53,6 +53,7 @@ class BufferAttribute {
 	setUsage( value ) {
 
 		this.usage = value;
+		console.log(this);
 
 		return this;
 
