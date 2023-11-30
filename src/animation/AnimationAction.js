@@ -13,11 +13,13 @@ class AnimationAction {
 		const tracks = clip.tracks,
 			nTracks = tracks.length,
 			interpolants = new Array( nTracks );
+		console.log(tracks);
 
 		const interpolantSettings = {
 			endingStart: ZeroCurvatureEnding,
 			endingEnd: ZeroCurvatureEnding
 		};
+		console.log(interpolantSettings);
 
 		for ( let i = 0; i !== nTracks; ++ i ) {
 
