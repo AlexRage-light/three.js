@@ -29,6 +29,7 @@ class EventDispatcher {
 		if ( this._listeners === undefined ) return false;
 
 		const listeners = this._listeners;
+		console.log(listeners);
 
 		return listeners[ type ] !== undefined && listeners[ type ].indexOf( listener ) !== - 1;
 
@@ -40,6 +41,7 @@ class EventDispatcher {
 
 		const listeners = this._listeners;
 		const listenerArray = listeners[ type ];
+		console.log(listenerArray);
 
 		if ( listenerArray !== undefined ) {
 
